@@ -86,11 +86,18 @@
 		<br>
 		<div class="indice col-12 col-lg-8 mx-auto">
 			<p>En esta unidad se presentan los siguientes temas:</p>
-		 <p><b>3.1	Artefactos XP.</b><br>
-			   3.1.1	Historias de usuario.<br>
-			   3.1.2	Tarjetas CRC.<br>
-			<b>3.2	Artefactos RAD.</b><br>
-			<b>3.3	Reglas de negocio.</b><br>
+		 <p><b>3.1 Comunicación entre el Front-end y el Back-end desarrollado.</b><br>
+			   3.1.1    Interfaz de programación de aplicaciones (API).<br>
+			   3.1.2	Programación Full Stack.<br>
+			<b>3.2	Pruebas del sistema desarrollado.</b><br>
+			   3.2.1    Elaboración de plan de pruebas.<br>
+			   3.2.3	Realización de pruebas.<br>
+			   3.2.4	Documentación de las pruebas.<br>
+			<b>3.3	Conclusión del desarrollo del sistema.</b><br>
+			   3.3.1    Puesta en producción del sistema .<br>
+			   3.3.2	Presentación ejecutiva.<br>
+			   3.3.3    Entrega del software o sistema.<br>
+			   3.3.4	Entrega de documentación.<br>
 			</p>
 		</div>
 
@@ -98,7 +105,7 @@
 
 
 		
-		<div class="pleca-temas">3.1. Artefactos XP</div>
+		<div class="pleca-temas">3.1. Comunicación entre el Front-end y el Back-end desarrollado</div>
 		<center><img src="imas/u3/3_1_banner.jpg" width="720" height="220" alt=""/></center>
 		<br>
       <p>Las metodologías ágiles son las que permiten a los equipos de desarrollo  de software responder de manera rápida las peticiones de construcción de  software o sistemas de información y durante este proceso responden rápidamente a los cambios que se van presentando.</p>
@@ -107,7 +114,7 @@
         <p>Por ejemplo: Si se utiliza el modelo de  prototipado y además el lenguaje unificado de modelado (UML), entonces dentro  de la planeación del proyecto se puede definir que en el primer ciclo se  obtendrán como artefactos dos entregables, las historias de usuario y el prototipo del sistema. </p>
       <p>Los artefactos en XP se gestionan mediante la  colaboración entre el cliente y el equipo de desarrollo. Se utilizan  herramientas como Jira, Tello, Git para llevar el control y seguimiento de los artefactos especificados en la planeación realizando revisiones y actualizaciones constantes.</p>
       <center></center>
-<h4>3.1.1. Historias de usuario</h4>
+<h4>3.1.1. Interfaz de programación de aplicaciones (API)</h4>
 		<p>La ingeniería de requerimientos hace uso de  herramientas y buenas prácticas para conocer los procesos implicados en los  sistemas de información a automatizar. Un sistema está compuesto de funciones y subfunciones que interrelacionadas procesan datos y generan información útil.</p>
         <p>Para tener claridad en cómo se llevan a cabo estas funciones, se cuenta con las historias de usuario las cuales permiten hacer la descripción de cada una de las funciones e identificar las características, esto bajo la mirada y experiencia del usuario.</p>
         <p>Las historias de usuario representan las necesidades y el comportamiento del usuario, las cuales se pueden considerar como las experiencias que el usuario vive día a día desempeñando sus actividades, las cuales se quieren automatizar.</p>
@@ -125,7 +132,7 @@
 	  <center><img src="imas/u3/u3_15.jpg" alt="Tabla 1. Historia de usuario recuperación de contraseña" width="850" height="935" class="img-fluid"><p class="tx-figura">Tabla 1. Historia de usuario recuperación de contraseña</p></center>
 		<p>En conclusión, las historias de usuario son fundamentales en la ingeniería de requerimientos ya que capturan las necesidades de los usuarios trasladándolas a las funcionalidades que compondrán el sistema, esta herramienta de ingeniería de requerimientos es utilizada en la programación extrema (XP).</p>
 
-		<h4>3.1.2. Tarjetas CRC</h4>
+		<h4>3.1.2. Programación Full Stack</h4>
 		<p>La ingeniería de requerimientos tiene como propósito modelar el sistema a desarrollar con base en los requerimientos obtenidos. Para modelar los requerimientos se hacen uso de herramientas como las tarjetas CRC (Class-Responsability-Colaboration), son utilizadas cuando se está diseñando con el enfoque orientado a objetos. Los componentes de las tarjetas son la clase (C) que representa una entidad del sistema, Responsability (R) define las funcionalidades que la clase debe ejecutar y Colaboration (C) son las clases que colaboran con la clase principal para lograr la funcionalidad de la clase principal.</p>
         <p>Para elaborar las tarjetas CRC es necesario conocer los requerimientos del sistema, ya que cada clase es una función del sistema, entonces contando con los requerimientos se debe realizar el análisis de estos para obtener una lista de las clases que compondrán el sistema, así como de la dependencia entre clases con ellos describir las responsabilidades correspondientes a cada clase.</p>
         <p>Para ejemplificar la elaboración de las  tarjetas CRC, suponga que se tiene la solicitud de elaborar el sistema de  gestión de productos de investigación de profesores pertenecientes a un centro de investigación. </p>
@@ -137,7 +144,7 @@
 		<br>
 	  <center><img src="imas/u3/u3_16.jpg" alt="Tabla 2. Tarjeta CRC" width="838" height="593" class="img-fluid">	<p class="tx-figura">Tabla 2. Tarjeta CRC</p></center>
 
-		<div class="pleca-temas">3.2. Artefactos RAD</div>
+		<div class="pleca-temas">3.2. Pruebas del sistema desarrollado</div>
 		<br>
 		<p>Continuemos con la metodología de desarrollo rápido de aplicaciones (RAD) la cual entra dentro de la clasificación de las metodologías ágiles, su característica principal se centra en la elaboración de prototipos y, al igual que XP, tiene el propósito de hacer entregas parciales (artefactos) del desarrollo.</p>
         <p>El desarrollo en RAD se mantiene el contacto  puntual con el usuario quien valida los prototipos, lo que permite que el  sistema no tenga errores de interpretación de los requerimientos.</p>
@@ -145,8 +152,14 @@
 <p>El ciclo de RAD se lleva a cabo mediante el análisis rápido de requerimientos los cuales entran al ciclo de desarrollo del prototipo el cual consta de cuatro etapas: la construcción, las pruebas, la demostración y el refinamiento del prototipo obteniendo un prototipo de alta fidelidad, en cada ciclo se obtiene un producto que es llamada en esta metodología un artefacto RAD, concluido el ciclo se obtiene el sistema el cual se lleva a producción. En la figura 15 se muestra este ciclo.</p>
 
 		<center><img src="imas/u3/u3_17.jpg" alt="Figura 15. Ciclo de desarrollo RAD" width="888" height="628" class="img-fluid">	<p class="tx-figura">Figura 15. Ciclo de desarrollo RAD</p></center>
+
+		<h4>3.2.1. Elaboración de plan de pruebas</h4>
+
+		<h4>3.2.3. Realización de pruebas</h4>
+
+		<h4>3.2.4. Documentación de las pruebas</h4>
 		
-		<div class="pleca-temas">3.3. Reglas de negocio</div>
+		<div class="pleca-temas">3.3. Conclusión del desarrollo del sistema</div>
 		<strong><center><img src="imas/u3/3_3_banner.jpg" width="720" height="220" alt=""/></center><br>
 		</strong>
 		<br>
@@ -167,6 +180,14 @@
 	  	  Por ejemplo, si el negocio tiene el giro  financiero, una regla del área financiera sería: No realice el pago de cheques de $10,000.00 sin previa autorización del ejecutivo de cuenta y si el área de desarrollo de sistema tiene que  desarrollar un sistema de información que gestione los pagos de cheques, esta  regla debe verse reflejada en el sistema el cual debe solicitar la autorización  del ejecutivo de cuenta.<br>
 	  	  <br>
   	    Entonces como ingeniero de requerimientos debes  conocer las reglas del negocio para ajustarte a ellas en el desarrollo de los  sistemas que se te soliciten ya que ello te facilitara entender, comprender e  identificar los requerimientos con mayor facilidad.</p>
+
+		  <h4>3.3.1. Puesta en producción del sistema</h4>
+
+		  <h4>3.3.2. Presentación ejecutiva</h4>
+
+		  <h4>3.3.4. Entrega del software o sistema</h4>
+
+		  <h4>3.3.4. Entrega de documentación</h4>
 <br>
 				<center><div class="actividad">
 			<h4>Actividad de reflexión 3:</h4> <hr>
