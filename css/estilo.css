@@ -16,7 +16,7 @@
     font-style: normal;
 }
 
-body{
+body{ /*Aquí va la imagen que estará en el fondo de todo el Libro Digital*/
     background: url("../imas/fondo.jpg") ;
     background-size:  100% 100%;
     background-position: top;
@@ -25,7 +25,7 @@ body{
     
 
 }
-#inicio{
+#inicio{ /*Bloque para el encabezado institucional*/
     text-align: center;
     padding-bottom: 20px;
     font-size: 26px;
@@ -33,11 +33,12 @@ body{
 }
 
 
-p{
+p{ /*Cualquier párrafo de este Libro Digital debe regirse bajo los siguentes ajustes*/
     text-align: justify;
+    font-size: 19px;
 }
 
-#botones_menu{
+#botones_menu{ /*El encabezado de este Libro Digital contiene un menú de navegación que debe seguir estos ajustes*/
     margin-top: -80px;
     color: white;
     text-align: center;
@@ -57,7 +58,7 @@ p{
     padding-top: 20px;
 }
 
-.card-header{
+.card-header{ /*Los colapsadores ubicados en el index de este Libro Digital deben seguir los siguientes ajustes*/
     background: url("../imas/pleca.jpg");
     background-size: auto 100%;
     background-position: right;
@@ -69,7 +70,7 @@ p{
     font-weight: bold;
 }
 
-.pleca-temas{
+.pleca-temas{ /*La pleca de los temas deben regirse bajo estos ajustes, incluye responsividad para tabletas y dispositivos móviles*/
     background: url("../imas/Pleca_contenidos.jpg");
     background-size: auto 100%;
     background-position: right;
@@ -102,12 +103,12 @@ p{
     top: 0px;
 }
 
-h3{
+h3{ /*Los títulos que lleven esta etiqueta deben seguir estos ajustes*/
     color:#154b60;
     margin-top: 32px;
 }
 
-h4{
+h4{ /*Los títulos que lleven esta etiqueta deben seguir estos ajustes*/
     color:#154b60;
     margin-top: 32px;
 }
@@ -115,6 +116,10 @@ h4{
 ol li::marker, ul li::marker {
     color: #031926;
     font-weight: bold;
+}
+
+ol li, ul li{ /*El contenido de las listas de este Libro Digital debe seguir los mismos ajustes de los párrafos*/
+    font-size: 19px;
 }
 
 a:link, a:visited, a:active {
@@ -130,13 +135,13 @@ a:link, a:visited, a:active {
     color:#ffbc36;
 }
 
-.titulin{
+.titulin{ /*Los títulos que lleven esta clase deben seguir estos ajustes*/
     color:#031926;
     font-size: 21px;
     margin-top: 30px;
 }
 
-#pleca_botones{
+#pleca_botones{ /*Son los ajustes de estilo para los botones de "Práctica" "Ejemplo de solución" y "Documentación del proyecto"*/
     width: 100%;
     padding: 10px;
     background: linear-gradient(to right, rgb(21,75,96), rgb(62,127,136));
@@ -144,13 +149,13 @@ a:link, a:visited, a:active {
     bottom:0px;
 }
 
-.tx-figura{
+.tx-figura{ /*Son los ajustes que deben tener los textos debajo de las figuras del Libro Digital*/
     text-align: center;
     color:#031926;
     margin-top: 10px;
 }
 
-.actividad{
+.actividad{ /*Corresponde a los ajustes de estilo para las actividades de reflexión de este Libro Digital*/
     background: #9dbebb;
     border: dotted 2px #031926;
     color: #031926;
@@ -176,6 +181,39 @@ hr{
     text-indent: -20px; /* Crea la sangria francesa*/
 }
 
-.glosario {
+.glosario { /*El glosario de este Libro Digital debe estar en forma de lista y el estilo de dicha lista debe regirse bajo el sigiente ajuste*/
     list-style: none;
+}
+
+.imagen-contenido{ /*Las imágenes de este Libro Digital deben tener las siguientes dimensiones*/
+	width: 800px;
+	height: 500px;
+}
+
+.imagen-contenido-vert{ /*En caso de que tus imagenes sean verticales deben regirse bajo estas dimensiones*/
+	width: 700px;
+	height: 800px;
+}
+
+.contenedor {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.imagen-responsiva { /*Esto hará que las preguntas detonadoras de cada unidad sigan los siguentes ajustes*/
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+@media (max-width: 768px){ /*Cuando se visualicen las imágenes en dispositivos móviles deben seguir los siguientes ajustes*/
+	.imagen-responsiva-movil {
+  		max-width: 100%;
+  		width: auto;
+  		height: auto;
+  		display: block;
+  		margin: 0 auto; /* Centrado horizontal */
+	}
 }
