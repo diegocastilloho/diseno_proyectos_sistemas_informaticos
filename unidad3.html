@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Libro digital - Diseño de Proyectos de Sistemas Informáticos</title>    
+    <title>Polilibro - Diseño de Proyectos de Sistemas Informáticos</title>    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">	
 	<link href="css/estilo.css" rel="stylesheet" type="text/css">	
@@ -102,7 +102,12 @@
 
 		
 		<div class="pleca-temas">3.1 Comunicación entre el Front-end y el Back-end desarrollado</div>
+		<br>
 		<center><img src="imas/u3/3_1_banner.jpg" class="imagen-responsiva"/></center>
+		<br>
+		<center><img src="imas/u3/3_1.2_banner.jpg" class="imagen-responsiva"/></center>
+		<br>
+		<center><img src="imas/u3/3_1.3_banner.jpg" class="imagen-responsiva"/></center>
 		<br>
       	<p>Como viste en el tema anterior el Front-end y el Back-end son las dos partes que integran un desarrollo de sistemas de información y ambos cumplen con papeles fundamentales, el Front-end es la interfaz del sistema y el Back-end es la arquitectura que da funcionalidad al sistema, por lo tanto, es necesario establecer la comunicación entre ambos.</p>
 
@@ -118,7 +123,7 @@
 
         <p>El diseño de las APIs incluye definir el propósito y el tipo de interacción que se dará con los usuarios del sistema, lo que significa identificar los servicios que se solicitarán y entregarán al usuario.</p>
 
-		<center><img src="imas/u3/u3_20.jpg" class="img-fluid imagen-contenido-vert imagen-responsiva-movil">	<p class="tx-figura">Figura 20. Interfaz de programación de aplicaciones</p></center>
+		<center><img src="imas/u3/u3_21.jpg" class="img-fluid imagen-contenido imagen-responsiva-movil">	<p class="tx-figura">Figura 21. Interfaz de programación de aplicaciones</p></center>
 
         <p>Con las API se realiza el intercambio de datos, se automatizan tareas, se facilita la integración de los servicios solicitados, la escalabilidad entre funciones y sobre todo se garantiza la seguridad en el acceso de los datos en tiempo real. Una de sus características de las API’s es que mejoran la experiencia de usuario, se logra la interoperabilidad entre los sistemas al compartir de manera eficiente la información. Así mismo, se logra el uso en multiplataforma que es de suma importancia ya que los sistemas deben correr o ejecutarse de manera consistente en los distintos sistemas operativo que hay actualmente.</p>
 
@@ -158,12 +163,85 @@
 		<h4>3.2.3 Documentación de las pruebas</h4>
 		<p>Es de suma relevancia documentar las pruebas realizadas al sistema de información con ello se facilita la corrección de los incidentes y/o errores que presente el sistema, por lo que es ideal que se diseñe un instrumento en el cual se registren cada una de las funciones que integran el sistema, el proceso que siguen, los datos de entrada y de salida, a continuación se te presenta un ejemplo, pero el instrumento es de creación libre y cada instrumento debe ajustarse a las necesidades y al tipo de prueba que se realiza.</p>
 
-		<center><img src="imas/u3/u3_15.jpg" class="img-fluid imagen-contenido-vert imagen-responsiva-movil"><p class="tx-figura">Tabla 1. Ejemplo de instrumento de documentación de pruebas</p></center>
-		
+		<center><div class="tabla-responsiva-movil">
+			<table>
+				<tr>
+					<th>Recuperación de contraseña</th>
+					<th>Objetivo:</th>
+					<td><i>Recuperar contraseña del usuario</i></td>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+
+				<tr>
+					<th>ID Prueba</th>
+					<th>CP-FR-01</th>
+					<th>Resultado esperado</th>
+					<th>Resultado obtenido</th>
+					<th>Observación</th>
+					<th>Prueba atendida</th>
+				</tr>
+
+				<tr>
+					<th>Proceso del caso de prueba</th>
+					<td><i>1.- Acceso a recuperación de contraseña</i></td>
+					<td>Presentar pantalla de recuperación de contraseña</td>
+					<td>Correcto</td>
+					<th></th>
+					<th></th>
+				</tr>
+
+				<tr>
+					<th></th>
+					<td><i>2.- Ingresar correo electrónico</i></td>
+					<td>El usuario puede ingresar su correo electrónico</td>
+					<td>Correcto</td>
+					<th></th>
+					<th></th>
+				</tr>
+
+				<tr>
+					<th></th>
+					<td><i>3.- Usuario envía la petición de recuperación</i></td>
+					<td>Llega la petición de recuperación de contraseña</td>
+					<td>Correo</td>
+					<th></th>
+					<th></th>
+				</tr>
+
+				<tr>
+					<th></th>
+					<td><i>4.- En espera de la liga de recuperación de contraseña</i></td>
+					<td>Envía la liga para recuperar la contraseña al correo del usuario</td>
+					<td>Si llega la liga al correo del usuario que lo solicitó</td>
+					<th></th>
+					<th></th>
+				</tr>
+
+				<tr>
+					<th></th>
+					<td><i>5.- Llega la liga de recuperación de contraseña</i></td>
+					<td>El sistema debe solicitar los datos para la recuperación de la contraseña</td>
+					<td>La liga no solicita los datos para la recuperación de la contraseña, únicamente redirige a la página de inicio de sesión</td>
+					<td>Atender el incidente, que pida los datos para recuperación de la contraseña</td>
+					<td>Si</td>
+				</tr>
+
+				<tr>
+					<th>Observación de los desarrolladores</th>
+					<td><i>Se atendió el incidente realizar la prueba nuevamente por favor</i></td>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+			</table>
+		</div></center>
+		<p class="tx-figura">Tabla 1. Ejemplo de instrumento de documentación de pruebas</p>
+
 		<div class="pleca-temas">3.3 Conclusión del desarrollo del sistema</div>
-		<br>
-		<strong><center><img src="imas/u3/3_3_banner.jpg" class="imagen-responsiva" alt=""/></center><br>
-		</strong>
+
 		<br>
         <p>El equipo de desarrollo inició con el desarrollo de un sistema de información con base en un plan de desarrollo el cual permitió concluir en tiempo y forma el sistema, la conclusión del desarrollo del sistema se considera cuando el sistema de información pasó por todas las pruebas y está libre de errores o incidentes.</p>
 
@@ -179,14 +257,14 @@
 		  <h4>3.3.1 Puesta en producción del sistema</h4>
 		  <p>Una vez que se asegura que el sistema y los manuales correspondientes están listos, debe iniciar con la puesta en producción del sistema. La puesta en producción de un sistema corresponde a realizar el despliegue de este, esto quiere decir que ha llegado el momento que el sistema sea utilizado en el ambiente real con los usuarios implicados, para lo cual se realiza la instalación en local o la migración en el servidor correspondiente para que el sistema quede operativo.</p>
 
-		  <center><img src="imas/u3/u3_21.jpg" class="img-fluid imagen-contenido-vert imagen-responsiva-movil">	<p class="tx-figura">Figura 21. Puesta en producción del sistema</p></center>
+		  <center><img src="imas/u3/u3_22.jpg" class="img-fluid imagen-contenido imagen-responsiva-movil">	<p class="tx-figura">Figura 22. Puesta en producción del sistema</p></center>
 
 		  <p>Es importante no olvidar que este despliegue debe considerar las medidas de seguridad.</p>
 
 		  <h4>3.3.2 Presentación ejecutiva</h4>
 		  <p>La <b>presentación ejecutiva</b> es una exposición formal ante las partes interesadas del proyecto para mostrar los resultados obtenidos, las funcionalidades implementadas y los beneficios que el sistema aportará a la organización.</p>
 
-		  <center><img src="imas/u3/u3_22.jpg" class="img-fluid imagen-contenido-vert imagen-responsiva-movil">	<p class="tx-figura">Figura 22. Presentación ejecutiva</p></center>
+		  <center><img src="imas/u3/u3_23.jpg" class="img-fluid imagen-contenido imagen-responsiva-movil">	<p class="tx-figura">Figura 23. Presentación ejecutiva</p></center>
 
 		  <p>Según Kerzner (2017), esta presentación debe enfocarse en cómo el sistema cumple con los objetivos estratégicos y aporta valor al negocio. "<i>La presentación ejecutiva debe resaltar los beneficios del sistema y cómo se alinean con los objetivos del negocio, proporcionando una visión clara del éxito del proyecto</i>".</p>
 
@@ -217,8 +295,14 @@
 
 	  </div>
 	  
-	  <div id="pleca_botones"><center><a href="pdf/práctica_3_u3.pdf"  target="_blank"><img src="imas/btn_ejercicios3.png" class="descargable" alt="descargar ejercicios"></a></center></div>
-
+	  <div id="pleca_botones"><center><a href="pdf/práctica_3_u3.pdf"  target="_blank"><img src="imas/btn_ejercicios3.png" class="descargable" alt="descargar ejercicios"></a> 
+		&nbsp; &nbsp; 
+		<a href="pdf/ejemplo_de_solución_p3u3.pdf"  target="_blank"><img src="imas/btn_solucion3.png" class="descargable" alt="descargar soluciones"></a> 
+		&nbsp; &nbsp; 
+		<a href="https://view.officeapps.live.com/op/view.aspx?src=https://www.sites.upiicsa.ipn.mx/uteycv/dispro/pdf/doc_del_proyecto_u1u2u3.docx" target="_blank" rel="noopener noreferrer"><img src="imas/btn_documentacion.png" class="descargable" alt="descargar documentación"> 
+		&nbsp; &nbsp;
+		<a href="https://view.officeapps.live.com/op/view.aspx?src=https://www.sites.upiicsa.ipn.mx/uteycv/dispro/pdf/manual_usuario_u3.docx" target="_blank" rel="noopener noreferrer"><img src="imas/btn_estructura.png" class="descargable" alt="descargar documentación"></center>
+	  </div>
 	  
 	  <br><br><br><br><br><br><br><br><br>
 	  

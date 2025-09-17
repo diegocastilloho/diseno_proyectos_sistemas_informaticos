@@ -216,4 +216,20 @@ hr{
   		display: block;
   		margin: 0 auto; /* Centrado horizontal */
 	}
+
+    .tabla-responsiva-movil{
+        width: 100%;
+        overflow: auto;
+    }
+}
+
+table{
+    width: 800px;
+    height: 500px;
+}
+
+td, th{
+    text-align: justify;
+    border: 1px solid #000000;
+    padding: 10px;
 }
