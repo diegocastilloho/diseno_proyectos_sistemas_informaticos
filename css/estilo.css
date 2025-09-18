@@ -16,7 +16,7 @@
     font-style: normal;
 }
 
-body{ /*Aquí va la imagen que estará en el fondo de todo el Libro Digital*/
+body{ /*Aquí va la imagen que estará en el fondo de todo el Polilibro*/
     background: url("../imas/fondo.jpg") ;
     background-size:  100% 100%;
     background-position: top;
@@ -33,12 +33,12 @@ body{ /*Aquí va la imagen que estará en el fondo de todo el Libro Digital*/
 }
 
 
-p{ /*Cualquier párrafo de este Libro Digital debe regirse bajo los siguentes ajustes*/
+p{ /*Cualquier párrafo de este Polilibro debe regirse bajo los siguentes ajustes*/
     text-align: justify;
     font-size: 19px;
 }
 
-#botones_menu{ /*El encabezado de este Libro Digital contiene un menú de navegación que debe seguir estos ajustes*/
+#botones_menu{ /*El encabezado de este Polilibro contiene un menú de navegación que debe seguir estos ajustes*/
     margin-top: -80px;
     color: white;
     text-align: center;
@@ -58,7 +58,7 @@ p{ /*Cualquier párrafo de este Libro Digital debe regirse bajo los siguentes aj
     padding-top: 20px;
 }
 
-.card-header{ /*Los colapsadores ubicados en el index de este Libro Digital deben seguir los siguientes ajustes*/
+.card-header{ /*Los colapsadores ubicados en el index de este Polilibro deben seguir los siguientes ajustes*/
     background: url("../imas/pleca.jpg");
     background-size: auto 100%;
     background-position: right;
@@ -118,7 +118,7 @@ ol li::marker, ul li::marker {
     font-weight: bold;
 }
 
-ol li, ul li{ /*El contenido de las listas de este Libro Digital debe seguir los mismos ajustes de los párrafos*/
+ol li, ul li{ /*El contenido de las listas de este Polilibro debe seguir los mismos ajustes de los párrafos*/
     font-size: 19px;
 }
 
@@ -149,13 +149,13 @@ a:link, a:visited, a:active {
     bottom:0px;
 }
 
-.tx-figura{ /*Son los ajustes que deben tener los textos debajo de las figuras del Libro Digital*/
+.tx-figura{ /*Son los ajustes que deben tener los textos debajo de las figuras del Polilibro*/
     text-align: center;
     color:#031926;
     margin-top: 10px;
 }
 
-.actividad{ /*Corresponde a los ajustes de estilo para las actividades de reflexión de este Libro Digital*/
+.actividad{ /*Corresponde a los ajustes de estilo para las actividades de reflexión de este Polilibro*/
     background: #9dbebb;
     border: dotted 2px #031926;
     color: #031926;
@@ -181,11 +181,11 @@ hr{
     text-indent: -20px; /* Crea la sangria francesa*/
 }
 
-.glosario { /*El glosario de este Libro Digital debe estar en forma de lista y el estilo de dicha lista debe regirse bajo el sigiente ajuste*/
+.glosario { /*El glosario de este Polilibro debe estar en forma de lista y el estilo de dicha lista debe regirse bajo el sigiente ajuste*/
     list-style: none;
 }
 
-.imagen-contenido{ /*Las imágenes de este Libro Digital deben tener las siguientes dimensiones*/
+.imagen-contenido{ /*Las imágenes de este Polilibro deben tener las siguientes dimensiones*/
 	width: 800px;
 	height: 500px;
 }
@@ -216,20 +216,28 @@ hr{
   		display: block;
   		margin: 0 auto; /* Centrado horizontal */
 	}
-
-    .tabla-responsiva-movil{
-        width: 100%;
-        overflow: auto;
-    }
 }
 
-table{
-    width: 800px;
-    height: 500px;
+.tabla-container {/* Contenedor de la tabla: permite que la tabla se haga scroll horizontal en pantallas pequeñas */
+    width: 100%;
+    overflow: auto;
 }
 
-td, th{
-    text-align: justify;
-    border: 1px solid #000000;
-    padding: 10px;
+table{/* Los ajustes que tendrían todas las tablas que se quieran incluir en el contenido*/
+    border-collapse:  collapse;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+th, td {/* Estilos para todas las celdas (encabezados y datos) */
+    background-color: rgba(244, 233, 205, 0.5);
+    border: 3px solid #062B3D;
+    padding: 8px;
+    text-align: center
+}
+
+th{/* Estilos específicos para los encabezados de la tabla */
+    background-color: rgba(229, 219, 204, 0.7);
+    color: #154b60;
 }

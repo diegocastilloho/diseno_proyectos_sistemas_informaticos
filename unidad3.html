@@ -163,82 +163,39 @@
 		<h4>3.2.3 Documentación de las pruebas</h4>
 		<p>Es de suma relevancia documentar las pruebas realizadas al sistema de información con ello se facilita la corrección de los incidentes y/o errores que presente el sistema, por lo que es ideal que se diseñe un instrumento en el cual se registren cada una de las funciones que integran el sistema, el proceso que siguen, los datos de entrada y de salida, a continuación se te presenta un ejemplo, pero el instrumento es de creación libre y cada instrumento debe ajustarse a las necesidades y al tipo de prueba que se realiza.</p>
 
-		<center><div class="tabla-responsiva-movil">
-			<table>
-				<tr>
-					<th>Recuperación de contraseña</th>
-					<th>Objetivo:</th>
-					<td><i>Recuperar contraseña del usuario</i></td>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-
-				<tr>
-					<th>ID Prueba</th>
-					<th>CP-FR-01</th>
-					<th>Resultado esperado</th>
-					<th>Resultado obtenido</th>
-					<th>Observación</th>
-					<th>Prueba atendida</th>
-				</tr>
-
-				<tr>
-					<th>Proceso del caso de prueba</th>
-					<td><i>1.- Acceso a recuperación de contraseña</i></td>
-					<td>Presentar pantalla de recuperación de contraseña</td>
-					<td>Correcto</td>
-					<th></th>
-					<th></th>
-				</tr>
-
-				<tr>
-					<th></th>
-					<td><i>2.- Ingresar correo electrónico</i></td>
-					<td>El usuario puede ingresar su correo electrónico</td>
-					<td>Correcto</td>
-					<th></th>
-					<th></th>
-				</tr>
-
-				<tr>
-					<th></th>
-					<td><i>3.- Usuario envía la petición de recuperación</i></td>
-					<td>Llega la petición de recuperación de contraseña</td>
-					<td>Correo</td>
-					<th></th>
-					<th></th>
-				</tr>
-
-				<tr>
-					<th></th>
-					<td><i>4.- En espera de la liga de recuperación de contraseña</i></td>
-					<td>Envía la liga para recuperar la contraseña al correo del usuario</td>
-					<td>Si llega la liga al correo del usuario que lo solicitó</td>
-					<th></th>
-					<th></th>
-				</tr>
-
-				<tr>
-					<th></th>
-					<td><i>5.- Llega la liga de recuperación de contraseña</i></td>
-					<td>El sistema debe solicitar los datos para la recuperación de la contraseña</td>
-					<td>La liga no solicita los datos para la recuperación de la contraseña, únicamente redirige a la página de inicio de sesión</td>
-					<td>Atender el incidente, que pida los datos para recuperación de la contraseña</td>
-					<td>Si</td>
-				</tr>
-
-				<tr>
-					<th>Observación de los desarrolladores</th>
-					<td><i>Se atendió el incidente realizar la prueba nuevamente por favor</i></td>
-					<th></th>
-					<th></th>
-					<th></th>
-					<th></th>
-				</tr>
-			</table>
-		</div></center>
-		<p class="tx-figura">Tabla 1. Ejemplo de instrumento de documentación de pruebas</p>
+		<div class="tabla-container"><table>
+			<tr>
+				<th>Recuperación de contraseña</th> <th>Objetivo:</th> <th>Recuperar contraseña del usuario</th> <td></td> <td></td> <td></td>
+			</tr>
+			<tr>
+				<th>ID prueba</th> <th>CP-FR-01</th> <th>Resultado esperado</th> <th>Resultado obtenido</th> <th>Observación</th> <th>Prueba atendida</th>
+			</tr>
+			<tr>
+				<th>Proceso del caso de prueba</th> <td>1.- Acceso a recuperación de contraseña</td> <td>Presentar pantalla de recuperación de contraseña</td> <td>Correcto</td> <td></td> <td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>2.- Ingresar correo electrónico</td>
+				<td>El usuario puede ingresar su correo electrónico</td>
+				<td>Correcto</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td> <td>3.- Usuario envía la petición de recuperación</td> <td>Llega la petición de recuperación de contraseña</td> <td>Correo</td> <td></td> <td></td>
+			</tr>
+			<tr>
+				<td></td> <td>4.- En espera de la liga de recuperación de contraseña</td> <td>Envia la liga para recuperar la contraseña al correo de ususario</td> <td>Si llega la liga al correo del usuario que lo solicito</td> <td></td> <td></td>
+			</tr>
+			<tr>
+				<td></td> <td>5.- Llega la liga de recuperación de contraseña</td> <td>El sistema debe solicitar los datos para la recuperación de la contraseña</td> <td>La liga no solicita los datos para la recuperación de la contraseña, unicamente redirige a la página de inicio de sesión</td> <td>Atender el incidente, que pida los datos para la recuperación de contraseña</td> <td>Si</td>
+			</tr>
+			<tr>
+				<th>Observación de los desarrolladores</th> <td>Se atendió el incidente, realizar la prueba nuevamente por favor</td> <td></td> <td></td> <td></td> <td></td>
+			</tr>
+		</table><p class="tx-figura">Tabla 1. Ejemplo de instrumento de documentación de pruebas</p>
+		</div>
+		<br>
 
 		<div class="pleca-temas">3.3 Conclusión del desarrollo del sistema</div>
 
